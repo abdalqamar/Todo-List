@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #FBD3E9, #D2B4DE, #BBDEFB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 25rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.heading {
+
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #EC4899, #3B82F6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+input,
+input:focus {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #374151;
+  outline: none;
+  outline: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.4);
+
+}
+
+
+
+
+::placeholder {
+  /* color: #526c8e; */
+  color: #6B7280;
+}
+
+.todos {
+  margin-top: 30px;
+}
+
+.todos li {
+  width: 95%;
+  padding: 10px;
+  background-color: #EC4899;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 5px;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.filtered {
+  display: none !important;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-container button {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(to right, #EC4899, #A855F7);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.input-container button:hover {
+  opacity: 0.9;
+}
+
+ul li button {
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #ec485e, #f74a4a);
+  transition: opacity 1s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: white;
+}
+
+
+@media (max-width: 640px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .todos,
+  input,
+
+  .input-container button {
+    padding: 0.75rem;
+  }
+}
